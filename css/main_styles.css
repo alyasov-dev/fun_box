@@ -8,6 +8,7 @@ body {
 body {
   background-image: url(..//img/Pattern.png);
   background-size: 100%;
+  -webkit-touch-callout: none;
   user-select: none;
 }
 
