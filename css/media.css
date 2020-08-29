@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px) {
+  .list {
+    max-width: 84%;
+  }
+  .list:last-child {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1014px) {
+  .list {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .list {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container__title {
+    font-size: 24px;
+  }
+  .list-item {
+    max-width: 300px;
+  }
+  .list-content__title {
+    font-size: 36px;
+  }
+  .list-content__name {
+    font-size: 13px;
+  }
+  .list-content {
+    min-height: 400px;
+    background-position: -50px 180px;
+  }
+}

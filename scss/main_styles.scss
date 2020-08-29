@@ -1,0 +1,86 @@
+﻿$blue-color: #1698D9; 
+$pink-color: #D91667;
+$white-color: #FFFFFF;
+$grey-color: #B3B3B3;
+$yellow-color: #FFFF66;
+$black-color: #000000;
+
+html,
+body {
+    font-family: 'TrebuchetMS', 'AdobeInvisFont', 'MyriadPro-Regular', sans-serif;
+    font-size: 12px;
+    color: $white-color;
+}
+
+body {
+    background-image: url(..//img/Pattern.png);
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;
+}
+
+
+.list-content__block-shadow {
+    opacity: 0.3;
+}
+  
+.list-content__blue-border {
+    border: 5px solid $blue-color;
+}
+  
+.list-content__pink-border {
+    border: 5px solid $pink-color;
+}
+    
+.list-content__grey-border {
+    border: 5px solid $grey-color;
+}
+  
+.list-content__blue-background {
+    background-color: $blue-color;
+}
+  
+.list-content__pink-background {
+    background-color: $pink-color;
+}
+
+.list-content__grey-background {
+    background-color: $grey-color;
+}
+
+.list-content__yellow-text {
+    color: $yellow-color;
+}
+
+.list-content__angle-blue:before {
+    background-color: $blue-color;
+}
+
+.list-content__angle-pink:before {
+    background-color: $pink-color;
+}
+
+.list-content__angle-grey:before {
+    background-color: $grey-color;
+}
+
+.display-n {
+    display: none;
+}
+
+.hover_element {
+    color: #E62E7A;
+    font-size: 16px;
+}
+
+
+@import 'styles';
+@import 'media';
+

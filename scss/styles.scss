@@ -1,0 +1,137 @@
+﻿$blue-color: #1698D9; 
+$pink-color: #D91667;
+$white-color: #FFFFFF;
+$grey-color: #B3B3B3;
+$yellow-color: #FFFF66;
+$black-color: #000000;
+$angle-size: 60px;
+
+  
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.container__title {
+    font-size: 36px;
+    font-family: 'Exo 2';
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container .list-indent {
+    margin-top: 50px;
+}
+
+.list-item {
+    margin-bottom: 50px;
+}
+
+.list-content__angle {
+    position: relative;
+    background-color: $white-color;
+    margin-bottom: 15px;
+    border-radius: 0 10px 10px 10px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 $angle-size, $angle-size 0);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 $angle-size, $angle-size 0);
+}
+
+.list-content__angle:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: block;
+    width: $angle-size;
+    height: $angle-size;
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 0 100%);
+        clip-path: polygon(0 100%, 0 0, 100% 0, 0 100%);
+}
+
+.list-content {
+    min-height: 480px;
+    padding: 15px 60px 0;
+    background-image: url('../img/Photo@1X.png');
+    background-repeat: no-repeat;
+    background-position: -30px 210px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 5px;
+}
+
+.list-content__name {
+    font-size: 16px;
+    color: $grey-color;
+}
+
+.list-content__title {
+    font-size: 48px;
+    line-height: 0.75;
+    font-weight: bold;
+    padding: 15px 0;
+    color: $black-color;
+    span {
+        font-size: 24px;
+    }    
+}
+
+.list-content__subname {
+    font-size: 14px;
+    opacity: 1;
+    color: $grey-color;
+    padding-bottom: 30px;
+}
+
+.list-content__image-position{
+    position: absolute;
+    display: block;
+    left: -25px;
+    bottom: -85px;
+    z-index: -10;
+    background-clip: padding-box;
+}
+
+.list-content__circle-position {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 100%;
+    line-height: 0.6;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.list-content__circle-text {
+    display: block;
+    font-size: 42px;
+    span {
+        font-size: 24px;
+    }
+}
+
+
+.list-content__link {
+    text-align: center;
+    font-size: 13px;
+    a {
+        text-decoration: none;
+        border-bottom: 1.5px dashed $blue-color;
+        color: $blue-color;
+        &:active {
+            border-bottom: 1.5px dashed $blue-color; 
+        }
+    
+        &:visited {
+            border-bottom: 1.5px dashed $blue-color;
+        }
+    }
+}
