@@ -60,11 +60,6 @@ body {
   display: none;
 }
 
-.hover_element {
-  color: #E62E7A;
-  font-size: 16px;
-}
-
 .container {
   display: flex;
   align-items: center;
