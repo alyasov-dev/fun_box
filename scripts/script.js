@@ -9,10 +9,7 @@
     thirdText = document.getElementById('third_text'),
     list = document.querySelector('.list');
        
-let click = 0,
-    hoverElement1 = document.getElementById('firstHoverElement'),
-    hoverElement2 = document.getElementById('secondHoverElement'),
-    hoverElement3 = document.getElementById('thirdHoverElement');
+let click = 0;
 
 firstElement.addEventListener('click', firstElementFunction);  
 secondElement.addEventListener('click', secondElementFunction);
@@ -21,33 +18,33 @@ thirdElement.addEventListener('click', thirdElementFunction);
 
 function firstElementFunction() {
 
-    // click++;
+    click++;
 
-    // if(click % 2 === 1) { 
-    //     secondElement.removeEventListener('click', secondElementFunction);
-    //     thirdElement.removeEventListener('click', thirdElementFunction);
+    if(click % 2 === 1) { 
+        secondElement.removeEventListener('click', secondElementFunction);
+        thirdElement.removeEventListener('click', thirdElementFunction);
 
-    //     //меняем текст блоков
-    //     secondText.classList.add('display-n');
-    //     thirdText.classList.add('display-n');
+        //меняем текст блоков
+        secondText.classList.add('display-n');
+        thirdText.classList.add('display-n');
 
-    //     let firstClone = firstText.cloneNode(true);
-    //     let secondClone = firstText.cloneNode(true);
+        let firstClone = firstText.cloneNode(true);
+        let secondClone = firstText.cloneNode(true);
 
-    //     secondElement.parentElement.append(firstClone);
-    //     thirdElement.parentElement.append(secondClone);
-    // }
+        secondElement.parentElement.append(firstClone);
+        thirdElement.parentElement.append(secondClone);
+    }
 
-    // else {
-    //     secondElement.addEventListener('click', secondElementFunction);
-    //     thirdElement.addEventListener('click', thirdElementFunction);
+    else {
+        secondElement.addEventListener('click', secondElementFunction);
+        thirdElement.addEventListener('click', thirdElementFunction);
 
-    //     secondElement.parentElement.lastElementChild.remove();
-    //     thirdElement.parentElement.lastElementChild.remove();
+        secondElement.parentElement.lastElementChild.remove();
+        thirdElement.parentElement.lastElementChild.remove();
 
-    //     secondText.classList.remove('display-n');
-    //     thirdText.classList.remove('display-n');
-    // }
+        secondText.classList.remove('display-n');
+        thirdText.classList.remove('display-n');
+    }
     
     //меняем цвет бордера двух эдементов
     secondElement.classList.toggle('list-content__pink-border');
